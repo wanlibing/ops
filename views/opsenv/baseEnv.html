@@ -1,0 +1,422 @@
+
+
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                运维基础信息
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">OPS</a></li>
+                <li class="active">Basic information </li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <div class="row">
+                <div class="col-md-3">
+
+                    <!-- Profile Image -->
+                    <div class="box box-primary">
+                        <div class="box-body box-profile">
+
+
+                            <h3 class="profile-username text-center">测试环境</h3>
+
+                            <p class="text-muted text-center">only the office LAN access</p>
+
+                            <ul class="list-group list-group-unbordered">
+                                <li class="list-group-item">
+                                    <b>system</b> <a class="pull-right">centos7.3 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Jdk base env</b> <a class="pull-right">JDK8-Docker </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>mysql address</b> <a class="pull-right">10.10.215.36:3306 <i class="fa fa-eye"></i></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>redis address</b> <a class="pull-right">10.10.215.36:6380 <i class="fa fa-eye"></i></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>jenkins url</b> <a class="pull-right">jenkins.conpany.cn <i class="fa fa-eye"></i></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Elk url</b> <a class="pull-right">kiabana.conpany.cn <i class="fa fa-eye"></i></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Monitor url</b> <a class="pull-right">grafana-promethues.conpany.cn <i class="fa fa-eye"></i></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+
+                    <!-- About Me Box -->
+                    <div class="box box-primary">
+                        <div class="box-body box-profile">
+
+
+                            <h3 class="profile-username text-center">预发布环境</h3>
+
+                            <p class="text-muted text-center">only the office LAN access</p>
+
+                            <ul class="list-group list-group-unbordered">
+                                <li class="list-group-item">
+                                    <b>system</b> <a class="pull-right">centos7.3 </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Jdk base env</b> <a class="pull-right">JDK8-Kubenetes </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>mysql address</b> <a class="pull-right">10.10.215.63:3306 <i class="fa fa-eye"></i></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>redis address</b> <a class="pull-right">10.10.215.63:6380 <i class="fa fa-eye"></i></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>jenkins url</b> <a class="pull-right">jenkins.conpany.cn <i class="fa fa-eye"></i></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Elk url</b> <a class="pull-right">kiabana.conpany.cn <i class="fa fa-eye"></i></a>
+                                </li>
+                                <li class="list-group-item">
+                                    <b>Monitor url</b> <a class="pull-right">grafana-promethues.conpany.cn <i class="fa fa-eye"></i></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-9">
+                    <div class="nav-tabs-custom">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#activity" data-toggle="tab">业务系统</a></li>
+                            <li><a href="#timeline" data-toggle="tab">发布系统</a></li>
+                            <li><a href="#settings" data-toggle="tab">线上系统</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="active tab-pane" id="activity">
+                                <!-- Post -->
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">Spring-Cloud 微服务平台</h3>
+
+                                        <div class="box-tools">
+                                            <div class="input-group input-group-sm" style="width: 150px;">
+                                                <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                                                <div class="input-group-btn">
+                                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body table-responsive no-padding">
+                                        <table class="table table-hover">
+                                            <tr>
+                                                <th>微服务名</th>
+                                                <th>服务系统</th>
+                                                <th>cpu limit</th>
+                                                <th>Memory limit</th>
+                                                <th>部署个数</th>
+                                                <th>部署平台</th>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-zuul</td>
+                                                <td><span class="label label-danger">网关</span></td>
+                                                <td>2核</td>
+                                                <td>4G</td>
+                                                <td>4</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-admin</td>
+                                                <td><span class="label label-success">管理</span></td>
+                                                <td>1核</td>
+                                                <td>4G</td>
+                                                <td>1</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-zipkin</td>
+                                                <td><span class="label label-success">链路监控</span></td>
+                                                <td>1核</td>
+                                                <td>4G</td>
+                                                <td>1</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-eureka</td>
+                                                <td><span class="label label-danger">注册中心</span></td>
+                                                <td>2核</td>
+                                                <td>4G</td>
+                                                <td>1</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-config</td>
+                                                <td><span class="label label-success">配置中心</span></td>
+                                                <td>1核</td>
+                                                <td>4G</td>
+                                                <td>2</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-base</td>
+                                                <td><span class="label label-success">基础服务</span></td>
+                                                <td>2核</td>
+                                                <td>4G</td>
+                                                <td>3</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-account</td>
+                                                <td><span class="label label-primary">账号管理</span></td>
+                                                <td>2核</td>
+                                                <td>4G</td>
+                                                <td>2</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-permissions</td>
+                                                <td><span class="label label-primary">权限系统</span></td>
+                                                <td>2核</td>
+                                                <td>4G</td>
+                                                <td>2</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-oss</td>
+                                                <td><span class="label label-success">存储系统</span></td>
+                                                <td>2核</td>
+                                                <td>4G</td>
+                                                <td>2</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-C</td>
+                                                <td><span class="label label-success">C端</span></td>
+                                                <td>2核</td>
+                                                <td>4G</td>
+                                                <td>3</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-collection</td>
+                                                <td><span class="label label-warning">信息采集</span></td>
+                                                <td>2核</td>
+                                                <td>4G</td>
+                                                <td>6</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-PC</td>
+                                                <td><span class="label label-info">客户端</span></td>
+                                                <td>2核</td>
+                                                <td>4G</td>
+                                                <td>2</td>
+                                                <td>windows server</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-business</td>
+                                                <td><span class="label label-primary">业务系统</span></td>
+                                                <td>3核</td>
+                                                <td>6G</td>
+                                                <td>20</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cloud-business</td>
+                                                <td><span class="label label-primary">业务系统</span></td>
+                                                <td>3核</td>
+                                                <td>6G</td>
+                                                <td>20</td>
+                                                <td>k8s-1.8.4</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <!-- /.post -->
+
+                                <!-- Post -->
+
+                                <!-- /.post -->
+
+                                <!-- Post -->
+
+                                <!-- /.post -->
+                            </div>
+                            <!-- /.tab-pane -->
+                            <div class="tab-pane" id="timeline">
+                                <!-- The timeline -->
+                                <ul class="timeline timeline-inverse">
+                                    <!-- timeline time label -->
+                                    <li class="time-label">
+                        <span class="bg-red">
+                          10 Feb. 2014
+                        </span>
+                                    </li>
+                                    <!-- /.timeline-label -->
+                                    <!-- timeline item -->
+                                    <li>
+                                        <i class="fa fa-envelope bg-blue"></i>
+
+                                        <div class="timeline-item">
+                                            <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+
+                                            <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+
+                                            <div class="timeline-body">
+                                                Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                                                weebly ning heekya handango imeem plugg dopplr jibjab, movity
+                                                jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+                                                quora plaxo ideeli hulu weebly balihoo...
+                                            </div>
+                                            <div class="timeline-footer">
+                                                <a class="btn btn-primary btn-xs">Read more</a>
+                                                <a class="btn btn-danger btn-xs">Delete</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- END timeline item -->
+                                    <!-- timeline item -->
+                                    <li>
+                                        <i class="fa fa-user bg-aqua"></i>
+
+                                        <div class="timeline-item">
+                                            <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
+
+                                            <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request
+                                            </h3>
+                                        </div>
+                                    </li>
+                                    <!-- END timeline item -->
+                                    <!-- timeline item -->
+                                    <li>
+                                        <i class="fa fa-comments bg-yellow"></i>
+
+                                        <div class="timeline-item">
+                                            <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
+
+                                            <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+
+                                            <div class="timeline-body">
+                                                Take me to your leader!
+                                                Switzerland is small and neutral!
+                                                We are more like Germany, ambitious and misunderstood!
+                                            </div>
+                                            <div class="timeline-footer">
+                                                <a class="btn btn-warning btn-flat btn-xs">View comment</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- END timeline item -->
+                                    <!-- timeline time label -->
+                                    <li class="time-label">
+                        <span class="bg-green">
+                          3 Jan. 2014
+                        </span>
+                                    </li>
+                                    <!-- /.timeline-label -->
+                                    <!-- timeline item -->
+                                    <li>
+                                        <i class="fa fa-camera bg-purple"></i>
+
+                                        <div class="timeline-item">
+                                            <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+
+                                            <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+
+                                            <div class="timeline-body">
+                                                <img src="http://placehold.it/150x100" alt="..." class="margin">
+                                                <img src="http://placehold.it/150x100" alt="..." class="margin">
+                                                <img src="http://placehold.it/150x100" alt="..." class="margin">
+                                                <img src="http://placehold.it/150x100" alt="..." class="margin">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- END timeline item -->
+                                    <li>
+                                        <i class="fa fa-clock-o bg-gray"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.tab-pane -->
+
+                            <div class="tab-pane" id="settings">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputName" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputExperience" class="col-sm-2 control-label">Experience</label>
+
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputSkills" class="col-sm-2 control-label">Skills</label>
+
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-danger">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /.tab-pane -->
+                        </div>
+                        <!-- /.tab-content -->
+                    </div>
+                    <!-- /.nav-tabs-custom -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+        </section>
+        <!-- /.content -->
+    </div>

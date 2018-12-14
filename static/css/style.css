@@ -1,0 +1,92 @@
+/*  登录样式 */
+body {
+    background: url("/static/img/home/loginbg.jpg") no-repeat ;
+
+}
+.login-box{
+    margin: 10% auto;
+    width: 400px;
+    background-color: #444444;
+
+}
+.login-box-body, .register-box-body{
+    background-color: #1a529133;
+    box-shadow: 10px 5px 70px #00c0ef;
+    border: 1px solid #00c0ef;
+    padding: 10px;
+}
+
+.login-box-body p{
+    float: right;
+}
+
+.login-box-msg, .register-box-msg{
+    color: #fff;
+}
+
+p {
+    color: red;
+}
+.node-p {
+    color: black;
+}
+hr {
+    color: red;
+}
+
+
+/*  按钮 */
+/监控平台表格行样式/
+.monitor-tr {
+    z-index: 10;
+
+}
+
+.monitor-tr:hover {
+    background-color: #D8D797 !important;
+    cursor: pointer;
+}
+
+
+/*  部署页面小图标 */
+.fa-circle-doing {
+    color: red;
+}
+.fa-circle-success {
+    color: green;
+}
+.fa-circle-no {
+    color: red;
+}
+
+.deploymen-plan-dbname li {
+    list-style: none;
+}
+
+.edit-sql-width .dropdown.bootstrap-select {
+    width: 80px !important;
+
+}
+
+.small-thin-icon{
+    color: #CCC;
+
+}
+
+/*  发布平台样式 */
+.deploy-job-item:hover {
+    background-color: #FFC;
+    
+}
+.deploy-job-item {
+    cursor: pointer;
+
+}
+.deploy-job-item-yellow {
+    color: red;
+    font-weight: 900;
+    background-color: #FFC;
+    border-style:solid;
+    border-width:1px;
+
+}

@@ -1,0 +1,200 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Namespace {{ .nsName }}
+
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+    <section class="content">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+
+            <!-- ./col -->
+            <div class="col-md-12">
+                <!-- deployment -->
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">部署</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+
+                        <table class="table table-bordered">
+                            <tr>
+
+                                <th>名称</th>
+                                <th>标签</th>
+                                <th>容器组</th>
+                                <th>创建日期</th>
+                                <th>镜像</th>
+                            </tr>
+                                {{ range $dp := .k8sdeploy }}
+                                    <tr>
+
+                                        <td style="color: blue"> {{ $dp.Name }}</td>
+                                        <td>
+                                        {{  range $label := $dp.Label }}
+                                        <span class="label label-success" style="padding: 2px 5px;">{{$label}}</span>  <br/>
+                                                {{ end }}
+
+                                        </td>
+                                        <td>{{ $dp.ReadyReplic }} / {{ $dp.Replic }}</td>
+                                        <td> {{ $dp.CreateDate }}</td>
+                                        <td>{{ $dp.Image }}</td>
+
+
+                                    </tr>
+                                        {{ end }}
+
+
+
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                        <ul class="pagination pagination-sm no-margin pull-right">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- pods -->
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Pods</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+
+                        <table class="table table-bordered">
+                            <tr>
+
+                                <th>名称</th>
+                                <th>NodeName</th>
+                                <th>PodIp</th>
+                                <th>状态</th>
+                                <th>重启次数</th>
+                                <th>创建时间</th>
+                            </tr>
+                        {{ range $pod := .nsPod }}
+                            <tr>
+
+                                <td style="color: blue"> {{ $pod.Name }}</td>
+                                <td>{{ $pod.NodeIp }}</td>
+                                <td>{{ $pod.PodIp }}</td>
+                                <td>
+                                {{ if eq $pod.Status  "Running" }}
+                                    <span class="label label-success" style="padding: 2px 5px;"> {{ $pod.Status }} </span>
+                                        {{else}}
+                                    <span class="label label-danger" style="padding: 2px 5px;"> {{ $pod.Status }} </span>
+                                {{end}}
+
+
+                                </td>
+
+
+
+
+                                <td> {{ $pod.RestartCount }}</td>
+                                <td>{{ $pod.CreateDate }}</td>
+
+
+                            </tr>
+                        {{ end }}
+
+
+
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer clearfix">
+                        <ul class="pagination pagination-sm no-margin pull-right">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- service -->
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">service</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+
+                        <table class="table table-bordered">
+                            <tr>
+
+                                <th>名称</th>
+                                <th>label</th>
+                                <th>集群ip</th>
+                                <th>内部域名</th>
+                                <th>endpoints</th>
+                                <th>创建时间</th>
+                            </tr>
+                        {{ range $svc := .nsSvc }}
+                            <tr>
+
+                                <td style="color: blue"> {{ $svc.Name }}</td>
+                                <td>
+                                {{  range $label := $svc.Label }}
+                                    <span class="label label-success" style="padding: 2px 5px;">{{$label}}</span>  <br/>
+                                {{ end }}
+
+                                </td>
+                                <td>{{ $svc.ClusterIp }}</td>
+                                <td>  {{ $svc.DomainName }}  </td>
+                                <td>
+                            {{  range $ep := $svc.EndPoints }}
+                                <span class="label label-info" style="padding: 2px 5px;">{{$ep}}</span>  <br/>
+                            {{ end }}
+                                </td>
+                                <td>{{ $svc.CreateDate }}</td>
+
+
+                            </tr>
+                        {{ end }}
+
+
+
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+
+                </div>
+                <!-- /.box -->
+                <!-- /.box -->
+            </div>
+            <!-- ./col -->
+
+            <!-- ./col -->
+        </div>
+        <!-- /.row -->
+        <!-- Main row -->
+
+        <!-- /.row -->
+        <!-- /.row (main row) -->
+
+    </section>
+
+    <!-- Main content -->
+
+    <!-- /.content -->
+
+
+</div>
+
+
+
+

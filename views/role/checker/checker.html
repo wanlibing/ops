@@ -1,0 +1,134 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            sql审核任务
+            <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- Small boxes (Stat box) -->
+
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+            <div class="col-xs-12">
+
+                <!-- /.box -->
+
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">sql提交</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th id="myselfsort" >sql编号</th>
+                                <th>数据库名称</th>
+                                <th>sql语句</th>
+                                <th>提交时间</th>
+                                <th>审核人</th>
+                                <th class="checker-tip">审核状态</th>
+                                <th>执行人</th>
+                                <th class="ops-tip">执行状态</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!--
+                            1.可以给tr加ID，然后删除，但是用户1删除，用户2在操作怎么办？
+                            2.this对象可以操作状态
+                            -->
+                                {{ range .AllSubmitinfo}}
+                                <tr>
+                                    <td class="sql-id"> {{.Id}} </td>
+                                    <td> {{.Dbname}} </td>
+                                    <td> {{.Sqlstatment}}</td>
+                                    <td> {{.Submittime}}</td>
+                                    <td class="Approver-id" > {{.Approver }}</td>
+                                    <td> {{ if eq .ApprovalStatus 0 }} 待您审核 {{ else if eq .ApprovalStatus 1 }} 审批通过  {{  else  }} 审批不通过 {{ end }}</td>
+                                    <td> {{.Operator}}</td>
+                                    <td> {{ if eq .OperatorStatus 0 }} 未执行 {{ else if eq .OperatorStatus 1 }} 执行成功 {{  else }} 拒绝执行 {{ end }}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-success  btn-xs btn-check-ok" >
+                                        <i class="fa  fa-bullhorn"></i><span>通过</span>
+                                        </button>
+                                        <button type="button" class="btn btn-info  btn-xs btn-exec-urged" >
+                                            <i class=" fa fa-close"></i>
+                                            <span>催办</span>
+                                        </button>
+                                        <button type="button" class="btn btn-warning  btn-xs btn-check-false" >
+                                            <i class=" fa fa-close"></i>
+                                            <span>驳回</span>
+                                         </button>
+                                    </td>
+                                </tr>
+                                {{ end }}
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <!-- /.row (main row) -->
+
+    </section>
+    <!-- /.content -->
+
+
+</div>
+
+
+<script >
+    //定时获取审批催促弹窗信息
+    function urgedMsg()
+    {
+        $.ajax({
+            async: true,
+            type:'get',
+            url:'/mysql/urged' ,
+            dataType:'json',
+            success:function (data){
+                //抛出删除成功，并不显示此行
+                var content = data.Pusher + "催您sql审批任务'+ '; sql编号:" + data.Sqlid
+                if (data.Pusher !== "") {
+                    //alert("ok")
+                    layer.open({
+                        title: '催办任务',
+                        shade: 0,
+                        offset: 'rb',
+                        time: 2000,
+                        anim: 2,
+                        btn:[],
+                        skin: 'layui-layer-molv',
+                        content: content
+                    });
+
+
+                }
+                //  $(this).parent().remove();
+                //  $(this).css("display","none") 为什么不生效
+            }
+        })
+        setTimeout("urgedMsg()",3000)
+    }
+
+
+    window.onload=urgedMsg;
+</script>
+

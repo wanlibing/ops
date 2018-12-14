@@ -1,0 +1,673 @@
+
+
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                监控平台
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li><a href="#">OPS</a></li>
+                <li class="active">Basic information </li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <!-- Profile Image -->
+
+                    <!-- /.box -->
+
+                    <!-- 微服务 -->
+                    <div class="box">
+                        <div class="box-header">
+                            <h3 class="box-title">微服务列表</h3>
+
+                            <div class="box-tools">
+                                <div class="input-group input-group-sm" style="width: 150px;">
+                                    <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
+
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                        <button type="submit" class="btn btn-default"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body table-responsive no-padding " style="min-height: 500px">
+                            <table id="table" class="table table-hover table-bordered table-intel">
+                                <thead>
+                                <tr>
+                                    <th class="filter">微服务名</th>
+                                    <th class="filter">IP地址</th>
+                                    <th class="filter">系统</th>
+                                    <th class="filter">平台</th>
+
+                                </tr>
+                                </thead>
+                                <tr class="monitor-tr">
+                                    <td>cloud-zuul</td>
+                                    <td>192.168.138.128</td>
+                                    <td><span class="label label-danger">网关</span></td>
+                                    <td>docker</td>
+
+                                </tr>
+                                <tr class="monitor-tr">
+                                    <td>cloud-admin</td>
+                                    <td>127.0.0.1</td>
+                                    <td><span class="label label-danger">网关</span></td>
+                                    <td>docker</td>
+
+                                </tr>
+                                <tr class="monitor-tr">
+                                    <td>Mysql-prod-1</td>
+                                    <td>127.0.0.1</td>
+                                    <td><span class="label label-success">存储</span></td>
+                                    <td>ECS</td>
+
+                                </tr>
+                                <tr class="monitor-tr">
+                                    <td>Redis</td>
+                                    <td>127.0.0.1</td>
+                                    <td><span class="label label-success">存储</span></td>
+                                    <td>ECS</td>
+
+                                </tr>
+                                <tr class="monitor-tr">
+                                    <td>Nginx-01</td>
+                                    <td>10.204.20.3</td>
+                                    <td><span class="label label-info">中间件</span></td>
+                                    <td>ECS</td>
+
+                                </tr>
+                                <tr class="monitor-tr">
+                                    <td>Nginx-02</td>
+                                    <td>10.204.20.4</td>
+                                    <td><span class="label label-info">中间件</span></td>
+                                    <td>ECS</td>
+
+                                </tr>
+                                <tr class="monitor-tr">
+                                    <td>Consul</td>
+                                    <td>10.204.20.5</td>
+                                    <td><span class="label label-info">中间件</span></td>
+                                    <td>ECS</td>
+
+                                </tr>
+                                <tr class="monitor-tr">
+                                    <td>RabbitMq</td>
+                                    <td>10.204.20.5</td>
+                                    <td><span class="label label-info">中间件</span></td>
+                                    <td>ECS</td>
+
+                                </tr>
+
+                            </table>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Disk Usaged</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <div id="Monitor-DiskUsaged" style="height:250px"></div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Node Load</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <div id="Monitor-NodeLoad" style="height:250px"></div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Device I/O</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <div id="Monitor-DeviceIO" style="height:250px"></div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+
+                    <!-- /.nav-tabs-custom -->
+                </div>
+                <div class="col-md-4">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Memory Usaged</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <div id="Monitor-MemoryUsaged" style="height:250px"></div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.nav-tabs-custom -->
+                    <!-- network IO -->
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Network I/O(30m avg)</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="chart">
+                                <div id="Monitor-NetworkIO" style="height:250px"></div>
+                            </div>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+
+        </section>
+        <!-- /.content -->
+    </div>
+    <script src="/static/js/jquery-1.11.0.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/echarts/4.1.0.rc2/echarts.js"></script>
+    <script type="text/javascript">
+        //table filter
+        $(function () {
+            $('#table').excelTableFilter({
+                'captions':{ a_to_z: '升序排列', z_to_a: '降序排列', search: '搜索', select_all: '全部选择' }
+            });
+        });
+        //table filter
+
+
+        var dom = document.getElementById("Monitor-DiskUsaged");
+        var myChart_disk = echarts.init(dom);
+        var app = {};
+        var diskUsagedData = 0
+        optiondisk = null;
+        optiondisk = {
+            tooltip : {
+                formatter: "{a} <br/>{b} : {c}%"
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    mark : {show: true},
+                    //restore : {show: true}, //图形右上角的还原按钮
+                    //saveAsImage : {show: true} 图形右上角的保存按钮
+                }
+            },
+            series : [
+                {
+                    name:'磁盘使用率',
+                    type:'gauge',
+                    center : ['50%', '50%'],    // 默认全局居中
+                    //radius : [0, '75%'],
+                    startAngle: 140,
+                    endAngle : -140,
+                    min: 0,                     // 最小值
+                    max: 100,                   // 最大值
+                    precision: 0,               // 小数精度，默认为0，无小数点
+                    splitNumber: 10,             // 分割段数，默认为5
+                    axisLine: {            // 坐标轴线
+                        show: true,        // 默认显示，属性show控制显示与否
+                        lineStyle: {       // 属性lineStyle控制线条样式
+                            color: [[0.2, 'lightgreen'],[0.4, 'orange'],[0.8, 'skyblue'],[1, '#ff4500']],
+                            width: 30
+                        }
+                    },
+                    axisTick: {            // 坐标轴小标记
+                        show: true,        // 属性show控制显示与否，默认不显示
+                        splitNumber: 5,    // 每份split细分多少段
+                        length :8,         // 属性length控制线长
+                        lineStyle: {       // 属性lineStyle控制线条样式
+                            color: '#eee',
+                            width: 1,
+                            type: 'solid'
+                        }
+                    },
+                    axisLabel: {           // 坐标轴文本标签，详见axis.axisLabel
+                        show: true,
+                        formatter: function(v){
+                            switch (v+''){
+                                case '10': return '弱';
+                                case '30': return '低';
+                                case '60': return '中';
+                                case '90': return '高';
+                                default: return '';
+                            }
+                        },
+                        textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                            color: '#333'
+                        }
+                    },
+                    splitLine: {           // 分隔线
+                        show: true,        // 默认显示，属性show控制显示与否
+                        length :30,         // 属性length控制线长
+                        lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式
+                            color: '#eee',
+                            width: 2,
+                            type: 'solid'
+                        }
+                    },
+                    pointer : {
+                        length : '80%',
+                        width : 8,
+                        color : 'auto'
+                    },
+                    title : {
+                        show : true,
+                        offsetCenter: ['-65%', -10],       // x, y，单位px
+                        textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                            color: '#333',
+                            fontSize : 15
+                        }
+                    },
+                    detail : {
+                        show : true,
+                        backgroundColor: 'rgba(0,0,0,0)',
+                        borderWidth: 0,
+                        borderColor: '#ccc',
+                        width: 100,
+                        height: 40,
+                        offsetCenter: ['-60%', 10],       // x, y，单位px
+                        formatter:'{value}%',
+                        textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                            color: 'auto',
+                            fontSize : 30
+                        }
+                    },
+                    data:[{value: diskUsagedData, name: '仪表盘'}]
+                }
+            ]
+        };
+        if (optiondisk && typeof optiondisk === "object") {
+            var startTime = +new Date();
+            myChart_disk.setOption(optiondisk, true);
+
+        }
+
+        //内存使用图
+        var dom = document.getElementById("Monitor-MemoryUsaged");
+        var myChartMemory = echarts.init(dom);
+        var app = {};
+        var diskMemoryData =0
+        optionMemory = null;
+        optionMemory = {
+            tooltip : {
+                formatter: "{a} <br/>{b} : {c}%"
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    mark : {show: true},
+                    //restore : {show: true}, //图形右上角的还原按钮
+                    //saveAsImage : {show: true} 图形右上角的保存按钮
+                }
+            },
+            series : [
+                {
+                    name:'磁盘使用率',
+                    type:'gauge',
+                    center : ['50%', '50%'],    // 默认全局居中
+                    //radius : [0, '75%'],
+                    startAngle: 140,
+                    endAngle : -140,
+                    min: 0,                     // 最小值
+                    max: 100,                   // 最大值
+                    precision: 0,               // 小数精度，默认为0，无小数点
+                    splitNumber: 10,             // 分割段数，默认为5
+                    axisLine: {            // 坐标轴线
+                        show: true,        // 默认显示，属性show控制显示与否
+                        lineStyle: {       // 属性lineStyle控制线条样式
+                            color: [[0.2, 'lightgreen'],[0.4, 'orange'],[0.8, 'skyblue'],[1, '#ff4500']],
+                            width: 30
+                        }
+                    },
+                    axisTick: {            // 坐标轴小标记
+                        show: true,        // 属性show控制显示与否，默认不显示
+                        splitNumber: 5,    // 每份split细分多少段
+                        length :8,         // 属性length控制线长
+                        lineStyle: {       // 属性lineStyle控制线条样式
+                            color: '#eee',
+                            width: 1,
+                            type: 'solid'
+                        }
+                    },
+                    axisLabel: {           // 坐标轴文本标签，详见axis.axisLabel
+                        show: true,
+                        formatter: function(v){
+                            switch (v+''){
+                                case '10': return '弱';
+                                case '30': return '低';
+                                case '60': return '中';
+                                case '90': return '高';
+                                default: return '';
+                            }
+                        },
+                        textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                            color: '#333'
+                        }
+                    },
+                    splitLine: {           // 分隔线
+                        show: true,        // 默认显示，属性show控制显示与否
+                        length :30,         // 属性length控制线长
+                        lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式
+                            color: '#eee',
+                            width: 2,
+                            type: 'solid'
+                        }
+                    },
+                    pointer : {
+                        length : '80%',
+                        width : 8,
+                        color : 'auto'
+                    },
+                    title : {
+                        show : true,
+                        offsetCenter: ['-65%', -10],       // x, y，单位px
+                        textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                            color: '#333',
+                            fontSize : 15
+                        }
+                    },
+                    detail : {
+                        show : true,
+                        backgroundColor: 'rgba(0,0,0,0)',
+                        borderWidth: 0,
+                        borderColor: '#ccc',
+                        width: 100,
+                        height: 40,
+                        offsetCenter: ['-60%', 10],       // x, y，单位px
+                        formatter:'{value}%',
+                        textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                            color: 'auto',
+                            fontSize : 30
+                        }
+                    },
+                    data:[{value: diskMemoryData, name: '仪表盘'}]
+                }
+            ]
+        };
+        if (optionMemory && typeof optionMemory === "object") {
+            var startTime = +new Date();
+            myChartMemory.setOption(optionMemory, true);
+
+        }
+
+
+        //系统load
+        var dom = document.getElementById("Monitor-NodeLoad");
+        var myChartLoad = echarts.init(dom);
+        var app = {};
+        var loadUsagedData = [0,0,0]
+        optionLoad = null;
+        optionLoad = {
+            tooltip : {
+                trigger: 'axis'
+            },
+
+            toolbox: {
+                show : true,
+                feature : {
+                    mark : {show: true}
+
+                }
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    data : ['最近1分钟','最近5分钟','最近15分钟']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'node load',
+                    type:'bar',
+                    barWidth:70,
+                    data:loadUsagedData,
+                    itemStyle: {
+                        normal: {
+                            //这里用函数控制柱子颜色，定义一个list，然后根据所以取得不同的值
+                            color: function(params) {
+                                var colorList = [
+                                    '#7BF524','#381EFA','#C1232B'
+                                ];
+                                return colorList[params.dataIndex]
+                            },
+                            label: {
+                                show: true,
+                                position: 'top',
+                                formatter: '{c}'
+                            }
+                        }
+                    },
+
+                },
+
+            ]
+        };
+        if (optionLoad && typeof optionLoad === "object") {
+            var startTime = +new Date();
+            myChartLoad.setOption(optionLoad, true);
+
+        }
+
+        var timeX = ["00:00","00:00","00:00","00:00","00:00","00:00","00:00","00:00","00:00","00:00","00:53","00:00","00:00"]
+
+        //network I/O
+        var dom = document.getElementById("Monitor-NetworkIO");
+        var myChartNetwork = echarts.init(dom);
+        var app = {};
+        var diskUsagedData = 83
+        optionNetwork = null;
+        optionNetwork = {
+
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['receive','transmit']
+            },
+
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : timeX
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'receive',
+                    type:'line',
+                    smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                    data:[0, 0, 0, 0, 0, 0, 0,0, 0, 0, 0, 0, 0]
+                },
+                {
+                    name:'transmit',
+                    type:'line',
+                    smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default',color:'#66FF00'}}},
+                    data:[0, 0, 0, 0, 0, 0, 0,0,0,0,0,0,0]
+                }
+            ]
+        };
+
+        if (optionNetwork && typeof optionNetwork === "object") {
+            var startTime = +new Date();
+            myChartNetwork.setOption(optionNetwork, true);
+
+        }
+
+        //DISK io
+        //time
+
+
+        var dom = document.getElementById("Monitor-DeviceIO");
+        var myChartDiskIo = echarts.init(dom);
+        var app = {};
+        var diskUsagedData = 83
+        optionDiskIo = null;
+        optionDiskIo = {
+
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['receive','transmit']
+            },
+
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : timeX
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'receive',
+                    type:'line',
+                    smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'green'}}},
+                    data:[0,0,0,0,0,0,0,0,0,0,0,0,0]
+                },
+                {
+                    name:'transmit',
+                    type:'line',
+                    smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default',color:'yellow'}}},
+                    data:[0,0,0,0,0,0,0,0,0,0,0,0,0]
+                }
+            ]
+        };
+
+        if (optionDiskIo && typeof optionDiskIo === "object") {
+            var startTime = +new Date();
+            myChartDiskIo.setOption(optionDiskIo, true);
+
+        }
+
+
+        $(".monitor-tr").click(function () {
+            layer.load()
+            //获取ip地址
+            var monitorIp = $(this).children("td").eq(1).text() + ".*"
+            //alert(monitorIp)
+            var urll = '/api/proxy/query?ip=' + '"' + monitorIp + '"'
+
+
+
+            //clearInterval(timeTicket);
+            timeTicket = setInterval(function (){
+                $.ajax({
+                    async: true,
+                    type:'get',
+                    url: urll ,
+                    dataType:'json',
+                    success:function (data){
+                        console.info(data.DiskUsagedPrecent * 100)
+                        //diskUsagedData = data.DiskUsagedPrecent * 100
+
+
+                        optiondisk.series[0].data[0].value = data.DiskUsagedPrecent * 100
+                        myChart_disk.setOption(optiondisk,true)
+                        optionMemory.series[0].data[0].value = data.MemoryUsagedPrecent * 100
+                        myChartMemory.setOption(optionMemory,true)
+                        optionLoad.series[0].data = data.NodeSystemLoad
+                        myChartLoad.setOption(optionLoad,true)
+                        //timeX = data.TimestrampX
+                        optionNetwork.xAxis[0].data = data.TimestrampX
+                        optionNetwork.series[0].data = data.NetworkReceive
+                        optionNetwork.series[1].data = data.NetworkTransmit
+                        myChartNetwork.setOption(optionNetwork,true)
+
+                        optionDiskIo.xAxis[0].data = data.TimestrampX
+                        optionDiskIo.series[0].data = data.DiskRead
+                        optionDiskIo.series[1].data = data.DiskWrite
+                        myChartDiskIo.setOption(optionDiskIo,true)
+
+
+
+                    },
+                    error:function(){
+                        console.info("inner error")
+                    }
+                })
+                layer.closeAll('loading');
+            },5000)
+
+
+        })
+
+    </script>

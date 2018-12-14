@@ -1,0 +1,94 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            sql审计
+            <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- Small boxes (Stat box) -->
+
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+            <div class="col-xs-12">
+
+                <!-- /.box -->
+
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">sql提交</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th id="myselfsort" >sql编号</th>
+                                <th>数据库名称</th>
+                                <th>sql语句</th>
+                                <th>提交时间</th>
+                                <th>审核人</th>
+                                <th class="checker-tip">审核状态</th>
+                                <th>执行人</th>
+                                <th class="ops-tip">执行状态</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!--
+                            1.可以给tr加ID，然后删除，但是用户1删除，用户2在操作怎么办？
+                            2.this对象可以操作状态
+                            -->
+                                {{ range .AllSubmitinfo}}
+                                <tr>
+                                    <td class="sql-id"> {{.Id}} </td>
+                                    <td> {{.Dbname}} </td>
+                                    <td> {{.Sqlstatment}}</td>
+                                    <td> {{.Submittime}}</td>
+                                    <td class="Approver" > {{.Approver }}</td>
+                                    <td> {{ if eq .ApprovalStatus 0 }} 审批中 {{ else if eq .ApprovalStatus 1 }} 审批通过  {{  else  }} 审批不通过 {{ end }}</td>
+                                    <td> {{.Operator}}</td>
+                                    <td> {{ if eq .OperatorStatus 0 }} 未执行 {{ else if eq .OperatorStatus 1 }} 执行成功 {{  else }} 拒绝执行 {{ end }}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary  btn-xs row-urged" >
+                                        <i class="fa  fa-bullhorn"></i><span>催促</span>
+                                        </button>
+                                        <button type="button" class="btn btn-warning  btn-xs row-delete" >
+                                            <i class=" fa fa-close"></i>
+                                            <span>撤回</span>
+                                         </button>
+                                    </td>
+                                </tr>
+                                {{ end }}
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <!-- /.row (main row) -->
+
+    </section>
+    <!-- /.content -->
+
+
+</div>
+
+
+
+

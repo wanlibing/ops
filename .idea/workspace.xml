@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aefe05b1-44bd-4036-94be-baf1abd36af1" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="router.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routers/router.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="36" column="86" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usermanager.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/usermanager.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="875">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Submitter.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/Submitter.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2300">
+              <caret line="96" column="63" selection-start-line="96" selection-start-column="63" selection-end-line="96" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kubernetes.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/kubernetes.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="30" column="28" selection-start-line="29" selection-start-column="4" selection-end-line="31" selection-end-column="63" />
+              <folding>
+                <element signature="n#!!block;n#GetNamespaces#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basecontroller.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/basecontroller.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="namespaces.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/opsmanager/k8s/namespaces.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2000">
+              <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ops.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/ops.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3700">
+              <caret line="296" column="22" selection-start-line="296" selection-start-column="9" selection-end-line="296" selection-end-column="22" />
+              <folding>
+                <element signature="n#!!block;n#GetQueryPrometheusData#0" />
+                <element signature="n#!!block;n#GetItemPlan#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1700">
+              <caret line="68" column="59" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout_home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/common/layout_home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="500.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/err/500.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18925">
+              <caret line="757" column="30" selection-start-line="757" selection-start-column="30" selection-end-line="757" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Go File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>drop</find>
+      <find>selectedItemsInTitle</find>
+      <find>click</find>
+      <find>filter-option-inner-inner</find>
+      <find>selected</find>
+      <find>jquery.min</find>
+      <find>xxs</find>
+      <find>/mysql/urged</find>
+      <find>/mysql/update</find>
+      <find>GET</find>
+      <find>inline</find>
+      <find>log.f</find>
+      <find>jobitem</find>
+      <find>GetNamespace</find>
+      <find>GetNodeData</find>
+      <find>cdnjs</find>
+      <find>clientcmd</find>
+      <find>/home/submitter/access</find>
+      <find>SubmitAccess</find>
+      <find>/home/submitter/processing</find>
+      <find>/home/ops/baseenv</find>
+      <find>/ops/manager/deployment</find>
+      <find>OpsManagerDeployment</find>
+      <find>/home/ops</find>
+      <find>OpsController</find>
+      <find>/user/sqlmanagement</find>
+      <find>SqlUserManagement</find>
+      <find>SubmitProcessing</find>
+      <find>bootstrap.min.css</find>
+      <find>cdn.bootcss.com</find>
+    </findStrings>
+  </component>
+  <component name="GOROOT" path="D:\go语言" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/template/bower_components/datatables.net/js/jquery.dataTables.js" />
+        <option value="$PROJECT_DIR$/models/init.go" />
+        <option value="$PROJECT_DIR$/controllers/init.go" />
+        <option value="$PROJECT_DIR$/views/role/checker/delete.html" />
+        <option value="$PROJECT_DIR$/static/js/urged.js" />
+        <option value="$PROJECT_DIR$/views/role/checker/checker.html" />
+        <option value="$PROJECT_DIR$/views/role/ops/ops.html" />
+        <option value="$PROJECT_DIR$/static/js/role/ops.js" />
+        <option value="$PROJECT_DIR$/controllers/default.go" />
+        <option value="$PROJECT_DIR$/models/user.go" />
+        <option value="$PROJECT_DIR$/static/js/role/checker.js" />
+        <option value="$PROJECT_DIR$/views/usermanager/sqlmanager.html" />
+        <option value="$PROJECT_DIR$/models/commit.go" />
+        <option value="$PROJECT_DIR$/controllers/loginhandler.go" />
+        <option value="$PROJECT_DIR$/controllers/mysql.go" />
+        <option value="$PROJECT_DIR$/views/common/layout_home_general.html" />
+        <option value="$PROJECT_DIR$/views/role/submitter/submitter.html" />
+        <option value="$PROJECT_DIR$/static/js/user/sqlusermanager.js" />
+        <option value="$PROJECT_DIR$/views/role/submitter/sider.html" />
+        <option value="$PROJECT_DIR$/views/role/submitter/treeview.html" />
+        <option value="$PROJECT_DIR$/views/common/layout_home_admin.html" />
+        <option value="$PROJECT_DIR$/controllers/checker.go" />
+        <option value="$PROJECT_DIR$/views/role/submitter/accessSubmitter.html" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/routers/filter.go" />
+        <option value="$PROJECT_DIR$/views/login.html" />
+        <option value="$PROJECT_DIR$/views/copy.html" />
+        <option value="$PROJECT_DIR$/views/opsenv/baseEnv.html" />
+        <option value="$PROJECT_DIR$/static/js/excel-bootstrap-table-filter-bundle.js" />
+        <option value="$PROJECT_DIR$/static/css/excel-bootstrap-table-filter-style.css" />
+        <option value="$PROJECT_DIR$/static/js/monitor.js" />
+        <option value="$PROJECT_DIR$/views/opsmanager/monitor.html" />
+        <option value="$PROJECT_DIR$/static/js/bootstrap-select.js" />
+        <option value="$PROJECT_DIR$/static/js/role/submitter.js" />
+        <option value="$PROJECT_DIR$/views/opsmanager/deployment.html" />
+        <option value="$PROJECT_DIR$/static/js/ops/deploy/deployment.js" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/views/opsmanager/k8s/node.html" />
+        <option value="$PROJECT_DIR$/views/role/ops/treeview.html" />
+        <option value="$PROJECT_DIR$/static/js/getns.js" />
+        <option value="$PROJECT_DIR$/routers/router.go" />
+        <option value="$PROJECT_DIR$/controllers/basecontroller.go" />
+        <option value="$PROJECT_DIR$/conf/app.conf" />
+        <option value="$PROJECT_DIR$/controllers/kubernetes.go" />
+        <option value="$PROJECT_DIR$/views/opsmanager/k8s/namespaces.html" />
+        <option value="$PROJECT_DIR$/controllers/Submitter.go" />
+        <option value="$PROJECT_DIR$/controllers/opsenv.go" />
+        <option value="$PROJECT_DIR$/static/err/500.html" />
+        <option value="$PROJECT_DIR$/controllers/ops.go" />
+        <option value="$PROJECT_DIR$/controllers/usermanager.go" />
+        <option value="$PROJECT_DIR$/views/common/layout_home.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/static/template/bower_components/Flot/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/bootstrap-datepicker/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/bootstrap-daterangepicker/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/chart.js/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/ckeditor/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/eve-raphael/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/ion.rangeSlider/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/jquery-knob/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/jquery-slimscroll/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/jquery-ui/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/morris.js/package.json" />
+      <path value="$PROJECT_DIR$/static/template/bower_components/select2/package.json" />
+      <path value="$PROJECT_DIR$/static/template/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="msql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msql" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msql" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msql" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msql" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css&#9;null&#9;null&#10;cdnjs&#9;null&#9;null&#10;not found&#9;null&#9;null&#10;Complete&#9;null&#9;null&#10;/mysql/update&#9;null&#9;null&#10;addsqljob-checkbox&#9;null&#9;null&#10;dropdown-filter-icon&#9;null&#9;null&#10;excelTableFilter&#9;FILE&#9;file://E:/mygo/src/msql/static/js/excel-bootstrap-table-filter-bundle.js&#10;dataTables_length&#9;null&#9;null&#10;length&#9;FILE&#9;file://E:/mygo/src/msql/static/template/bower_components/select2/src/js/select2/data/maximumSelectionLength.js&#10;example1&#9;FILE&#9;file://E:/mygo/src/gopkg.in/gin-gonic/gin.v1/examples/auto-tls/example1.go&#10;Show &#9;null&#9;null&#10;descending&#9;null&#9;null&#10;sorting_asc&#9;null&#9;null&#10;$(document).ready&#9;null&#9;null&#10;document&#9;null&#9;null" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\mygo\src\msql" />
+      <recent name="E:\mygo\src\msql\views\opsmanager\k8s" />
+      <recent name="E:\mygo\src\msql\views\role" />
+      <recent name="E:\mygo\src\msql\static\img\home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\mygo\src\msql\static\err" />
+      <recent name="E:\mygo\src\msql\views\err" />
+      <recent name="E:\mygo\src\msql\static" />
+      <recent name="E:\mygo\src\msql\views\opsmanager\k8s" />
+      <recent name="E:\mygo\src\msql\views\opsmanager" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="msql" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="msql" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.091145836" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35387886" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/views/usermanager/sqlmanager.html</url>
+          <line>139</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="13" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/common/layout_home_general.html" />
+    <entry file="file://$PROJECT_DIR$/views/role/submitter/sider.html" />
+    <entry file="file://$PROJECT_DIR$/views/role/submitter/treeview.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/common/layout_home_admin.html" />
+    <entry file="file://$PROJECT_DIR$/views/role/submitter/accessSubmitter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/commit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/usermanager/sqlmanager.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/default.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/opsmanager/baseEnv.html" />
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/excel-bootstrap-table-filter-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/excel-bootstrap-table-filter-bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="163" column="45" selection-start-line="163" selection-start-column="45" selection-end-line="163" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/checker.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/monitor.js" />
+    <entry file="file://$PROJECT_DIR$/views/role/checker/checker.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3250">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bootstrap-select.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="7" column="21884" selection-start-line="7" selection-start-column="21859" selection-end-line="7" selection-end-column="21884" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/bootstrap-select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="137" column="45" lean-forward="true" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/template/dist/css/alt/AdminLTE-without-plugins.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2706">
+          <caret line="1359" column="2" lean-forward="true" selection-start-line="1359" selection-start-column="2" selection-end-line="1359" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/copy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1976">
+          <caret line="823" column="36" lean-forward="true" selection-start-line="823" selection-start-column="36" selection-end-line="823" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/user/sqlusermanager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="190" column="6" lean-forward="true" selection-start-line="169" selection-start-column="3" selection-end-line="190" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/beego/bee/vendor/github.com/peterh/liner/common.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3725">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/role/checker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/urged.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/logs/color_windows_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/opsenv/baseEnv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/role/submitter/submitter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="60" column="18" lean-forward="true" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/filter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="35" column="83" selection-start-line="35" selection-start-column="83" selection-end-line="35" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/role/ops/ops.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2201">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/opsmanager/deployment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="429" column="63" lean-forward="true" selection-start-line="429" selection-start-column="63" selection-end-line="429" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/role/ops/treeview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="64" column="81" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/role/ops.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/role/submitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/mysql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="93" column="6" lean-forward="true" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/ops/deploy/deployment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1375">
+          <caret line="66" column="32" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/opsmanager/monitor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="70" column="83" selection-start-line="70" selection-start-column="76" selection-end-line="70" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/getns.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/opsenv.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/err/500.html" />
+    <entry file="file://$PROJECT_DIR$/views/opsmanager/k8s/node.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/opsmanager/k8s/namespaces.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2000">
+          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/err/500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18925">
+          <caret line="757" column="30" selection-start-line="757" selection-start-column="30" selection-end-line="757" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="68" column="59" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/ops.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3700">
+          <caret line="296" column="22" selection-start-line="296" selection-start-column="9" selection-end-line="296" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!block;n#GetQueryPrometheusData#0" />
+            <element signature="n#!!block;n#GetItemPlan#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/basecontroller.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/kubernetes.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="28" selection-start-line="29" selection-start-column="4" selection-end-line="31" selection-end-column="63" />
+          <folding>
+            <element signature="n#!!block;n#GetNamespaces#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/Submitter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="96" column="63" selection-start-line="96" selection-start-column="63" selection-end-line="96" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="36" column="86" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/usermanager.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/common/layout_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
