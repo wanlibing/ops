@@ -3,17 +3,17 @@ clusters:
 - cluster:
     certificate-authority: ssl/ca.crt
     server: https://172.21.205.57:6443
-  name: goldmantis
+  name: 
 contexts:
 - context:
-    cluster: goldmantis
+    cluster: 
     user: goldmantis
   name: goldmantis
-current-context: goldmantis
+current-context: 
 kind: Config
 preferences: {}
 users:
-- name: goldmantis
+- name: 
   user:
     client-certificate: ssl/client.crt
     client-key: ssl/client.key
